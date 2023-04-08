@@ -1,0 +1,69 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<hr>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();
+    }
+
+    function soma(a,b){
+        var total = a + b;
+        mostra("A soma de a mais b é "+ total);
+    }
+
+    function subitracao(a,b){
+        var sub = 0;
+        if(a > b){
+            sub = a - b;
+        }
+        else{
+            sub = b - a;
+        }
+
+        mostra("A subitração do maior menos o menor é "+ sub);
+
+    }
+
+    function multiplicacao(a,b){
+        var mult = a * b;
+        mostra("A multiplicação de a vezes b é "+ mult);
+    }
+    
+    function divisao(a,b){
+        var div = 0;
+        if(a > b){
+            div = a / b;
+        }
+        else{
+            div = b / a;
+        }
+        mostra("A divisao do maior dividido pelo menor é "+ div);
+    }
+
+    var a = 9;
+    var b = 5;
+    var esc = prompt("Informe uma operação matemática");
+   
+    switch (esc) {
+        case '+':
+            soma(a,b);
+            break;
+        case '-':
+            subitracao(a,b);
+            break;
+        case '*':
+            multiplicacao(a,b);
+            break;
+        case '/':
+            divisao(a,b);
+            break;
+        default:
+            break;
+    }
+</script>

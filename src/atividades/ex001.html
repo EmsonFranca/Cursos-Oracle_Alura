@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h1>Álcool ou Gasolina?</h1>
+
+<script >
+    var tanque = 40;
+    var caminhoComGasolina = 480;
+    var consumoDeGasolina = caminhoComGasolina/tanque;
+
+    var caminhoComAlcool = 300;
+    var consumoDeAlcool = caminhoComAlcool/tanque
+
+    document.write("O consumo de Gasolina é "+consumoDeGasolina+".<br>");
+    document.write("O consumo de Alcool é "+consumoDeAlcool+".<br>");
+
+    if(consumoDeAlcool < consumoDeGasolina){
+        document.write('O alcool consome menos')
+    }
+    else{
+        document.write('A gasolina consome menos.')
+    }
+
+
+</script>
