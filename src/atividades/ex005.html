@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function pulaLinha(){
+        document.write("<hr>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();
+    }
+
+    function soma(n1,n2){
+        return (n1+n2);
+    }
+
+    function divisao(n1,n2){
+        return (n1/n2);
+    }
+
+    function a(texto){
+        return "("+texto+")";
+    }
+
+    function b(texto){
+        return "@"+texto+"@";
+    }
+
+    function c(name,lestname){
+        return b(name+" "+a(lestname));
+    }
+    var resultado = soma(10,20) + divisao(30,2);
+   
+    mostra("O resultado é "+resultado);
+
+    //seuganda parte
+    resultado = c("Emson","França");
+
+    mostra(resultado);
+
+
+</script>
