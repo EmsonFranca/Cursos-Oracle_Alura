@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+    function mostra(frase){
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();
+    }
+    function pulaLinha() {
+        document.write('<br>');
+        document.write('<br>');
+    }
+    //parseInt() é uma função usada para converter String para INTEIRO
+    var vitorias = parseInt(prompt("Entre com o número de vitórias: "));
+    var empates = parseInt(prompt("Entre com números de empates: "));
+
+    var pontos = vitorias * 3 + empates;
+
+    mostra("Os ponto do seu time é " + pontos);
+
+    if(pontos > 28 ){
+        mostra("Seu time está melhor que o ano passado.");
+    }    
+    else if(pontos < 28 ){
+        mostra("Seu time está pior que o ano passado.");
+    }
+    else{
+        mostra("Seu time está igaul ao ano passado.")
+    }
+</script>

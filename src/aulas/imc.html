@@ -23,12 +23,22 @@
     var alturaEmson = 1.79;
     var imcEmson = calculaImc(pesoEmson,alturaEmson);
     
-    var pesoFriend = 80;
-    var alturaFriend = 1.79;
-    var imcFriend = calculaImc(pesoFriend,alturaFriend);
+    // var pesoFriend = 80;
+    // var alturaFriend = 1.79;
+    // var imcFriend = calculaImc(pesoFriend,alturaFriend);
     
     mostra("The imc is " + imcEmson);
-    mostra("The imc is " + imcFriend);
+    // mostra("The imc is " + imcFriend);
+
+    if(imcEmson < 18.5){
+        mostra("Você está abaixo do recomentado.")
+    }
+    else if(imcEmson >= 18.5 && imcEmson <=35){
+        mostra("Você está na média.")
+    }
+    else if(imcEmson > 35 ){
+        mostra("Você está acima do recomendado.")
+    }
 
 
 </script>
