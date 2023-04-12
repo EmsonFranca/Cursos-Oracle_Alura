@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    var loginCadastrado = "emson";
+    var senhaCadastrada = "emosn321";
+    
+    var tentativaAtual = 1;
+    var totalTentativas = 3;
+
+    while (tentativaAtual <= totalTentativas) {
+
+        var loginInformado = prompt("Informe seu login: ");
+        var senhaInformada = prompt("Informe sua senha: ");
+
+        if( loginCadastrado === loginInformado && senhaCadastrada === senhaInformada ) {
+
+            alert("Bem-vindo ao sistema " + loginInformado);
+            tentativaAtual === totalTentativas;
+        } else {
+
+            if( tentativaAtual === 3){
+                alert("Tente novamente em 24h!")
+            } else {
+            alert("Login inválido. Tente novamente");
+            alert("Restão " + tentativaAtual);
+            }
+        }
+        //vai pra a proxima tentativa
+        tentativaAtual++;
+    }
+
+</script>

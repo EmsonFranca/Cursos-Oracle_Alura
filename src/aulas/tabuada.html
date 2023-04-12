@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(frase){
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();
+    }
+    function pulaLinha() {
+        document.write('<br>');
+        document.write("<hr>")
+        document.write('<br>');
+    }
+    
+    var multiplicador = 1;
+
+    for(i = 1 ; i <= 10; i++){
+        mostra("7 x "+multiplicador+" = "+7*multiplicador);
+        multiplicador++;
+    }
+    
+</script>
