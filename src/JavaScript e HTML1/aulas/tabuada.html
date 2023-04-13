@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function mostra(frase){
+
+        document.write("<big>"+frase+"</big>");
+        pulaLinha();
+    }
+    function pulaLinha() {
+
+        document.write('<br>');
+        document.write("<hr>")
+        document.write('<br>');
+    }
+    
+    var multiplicador = 1;
+    
+    while(multiplicador <= 10){
+
+        mostra("2 x "+multiplicador+" = "+2*multiplicador);
+        multiplicador++;
+    }
+    
+    mostra("PASSOU AQUI !!");
+
+    for(multiplicador = 1 ; multiplicador <= 10; multiplicador++){
+
+        mostra("7 x "+multiplicador+" = "+7*multiplicador);
+    }
+
+</script>

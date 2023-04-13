@@ -1,0 +1,72 @@
+<meta charset="UTF-8">
+
+<input />
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    function verifica(){
+
+        var achou = false;
+        for(var i = 0 ; i < segredos.length ;i++){
+
+            if(input.value == segredos[i]){
+
+                alert('Acertou!');
+                achou=true;
+                break;
+            } 
+            
+        }
+        if(achou == false){
+            alert("Errou!");
+        }
+        input.value = "";
+        //input.focus() volta para o input automaticamente
+        input.focus();
+    }
+    function sorteia(){
+
+        return Math.round(Math.random()*10);
+
+    }
+    function sorteiaNumeros(quantidade){
+
+        var segredos = [];
+        var numero = 1;
+
+        while(numero <= quantidade){
+            var numeroAleatorio = sorteia();
+
+            if(numeroAleatorio != 0){
+
+                var achou = false;
+
+                for(var aux = 0; aux < segredos.length; aux++){
+                    if(segredos[aux] == numeroAleatorio){
+
+                        achou = true;
+                        break;
+                    }
+                }
+
+                if (achou == false){
+                    segredos.push(numeroAleatorio);
+                    numero++;
+                }
+            }
+        }
+        return segredos;
+    }
+
+    var segredos = sorteiaNumeros(3);
+    
+    var input = document.querySelector("input");
+    input.focus();
+
+    var button = document.querySelector("button");
+
+    //quando retira os () da função verifica o console copiar as funções interna para o onClick
+    button.onclick = verifica;
+    console.log(segredos);
+</script>
