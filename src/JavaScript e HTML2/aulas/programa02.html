@@ -1,0 +1,20 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    function desanhaQuadradoVerde(){
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = 'green';
+        pincel.fillRect(0,0,50,50);
+        //fillStroke = 'cor' colocar uma borda do retangulo
+        pincel.fillStroke = 'red';
+        //strokeRect(x,y,l1,l2); informa as dimenções
+        pincel.strokeRect(0,0,50,50);
+    }
+    
+
+    desanhaQuadradoVerde();
+
+
+</script>
