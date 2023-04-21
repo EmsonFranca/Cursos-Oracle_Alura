@@ -1,4 +1,5 @@
-    Para logar nas conta do Github: 
+  01
+   Para logar nas conta do Github: 
 git config --local user.name "Seu nome aqui"
 git config --local user.email "seu@email.aqui"
 
@@ -14,7 +15,7 @@ para mais informação acessar o site abaixo
 https://devhints.io/git-log
 
 
-Nesta aula, aprendemos:
+02 Nesta aula, aprendemos:
 
 Que um commit é a forma de salvar um estado ou versão do nosso código;
 
@@ -29,5 +30,18 @@ Como verificar o histórico de commits, através do git log e algumas de suas op
 
 Como fazer o Git não monitorar arquivos, através do .gitignore
 Que não devemos realizar commit, ou seja, salvar um estado, da nossa aplicação que não esteja funcionando.
+
+03 Nesta aula, aprendemos:
+
+O que são repositórios remotos;
+Como criar um repositório Git sem uma cópia dos arquivos (com --bare) para ser utilizado como servidor;
+Como adicionar links para os repositórios remotos, com o comando git remote add;
+Como baixar um repositório pela primeira vez, clonando-o com o comando git clone;
+Como enviar as nossas alterações para um repositório remoto, com git push;
+Como atualizar o nosso repositório com os dados no repositório remoto, utilizando git pull;
+O que é e para que serve o GitHub;
+Como criar um repositório no GitHub;
+Como adicionar um repositório do GitHub como repositório remoto.
+
 
 
