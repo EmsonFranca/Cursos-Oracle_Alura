@@ -1,7 +1,7 @@
   01
    Para logar nas conta do Github: 
-git config --local user.name "Seu nome aqui"
-git config --local user.email "seu@email.aqui"
+git config --origin user.name "Seu nome aqui"
+git config --originuser.email "seu@email.aqui"
 
     Criar um repositório Git:
 git init
