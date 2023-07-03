@@ -1,0 +1,7 @@
+.rodape{
+    background: var(--cor-cinza-claro);
+    color: var(--cor-titulo-banner);
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}

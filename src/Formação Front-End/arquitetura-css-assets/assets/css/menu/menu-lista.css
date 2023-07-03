@@ -1,0 +1,7 @@
+.menu__lista{
+    list-style: none;
+}
+
+.menu__lista:last-child .menu__lista__items{
+    margin-right: 0;
+}

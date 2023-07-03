@@ -1,0 +1,15 @@
+.menu__lista__items {
+    color: var(--cor-de-link);
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.menu__lista__items.ativo{
+    color: var(--cor-ativo);
+    font-weight: bold;
+}
+
+.menu__lista__items:hover{
+    text-decoration: underline;
+}
